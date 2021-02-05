@@ -1,0 +1,203 @@
+﻿
+@{
+    ViewBag.Title = "James Glover | Projects";
+}
+
+@section Masthead {
+    <section class="masthead masthead-other-pages text-center">
+        <div>
+            <h1 class="mt-5">Projects</h1>
+        </div>
+    </section>
+}
+
+<section class="page-section py-5 bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-headline text-uppercase mb-5">Projects</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                        </div>
+                        <img class="img-fluid project-logo" src="~/Content/assets/img/logos/front-end.jpg" alt="FED1" />
+                    </a>
+                    <div class="portfolio-caption text-center mt-4">
+                        <h3 class="project-title text-uppercase">Front-End Studio</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                        </div>
+                        <img class="img-fluid project-logo" src="~/Content/assets/img/logos/starwars.jpg" alt="space" />
+                    </a>
+                    <div class="portfolio-caption text-center mt-4">
+                        <h3 class="project-title text-uppercase">Star Wars Dungeon</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                        </div>
+                        <img class="img-fluid project-logo" src="~/Content/assets/img/logos/storefront.jpg" alt="storefont" />
+                    </a>
+                    <div class="portfolio-caption text-center mt-4">
+                        <h3 class="project-title text-uppercase">Store Front</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                        </div>
+                        <img class="img-fluid project-logo" src="~/Content/assets/img/logos/admin-tool.jpg" alt="admin" />
+                    </a>
+                    <div class="portfolio-caption text-center mt-4">
+                        <h3 class="project-title text-uppercase">Scheduling Admin Tool</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase text-center">Front-end studio</h2>
+                            <img class="img-fluid d-block mx-auto my-2" src="/assets/img/logos/front-end.jpg" alt="" />
+                            <p class="text-justify">A website for a fictional I.T. school built from a small business wireframe template. The website is built using HTML, CSS, JavaScript and jQuery. </p>
+                            <a href="#" target="_blank" class="project-link text-uppercase text-center d-block text-decoration-none">Go to project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase text-center">Star wars dungeon</h2>
+                            <img class="img-fluid d-block mx-auto my-2" src="~/Content/assets/img/logos/starwars.jpg" alt="star wars" />
+                            <p class="text-justify">A C# console Star Wars game in the style of classic dungeons and drangons games. Play as a young Jedi knight or a Mandalorian warrior and explore the galaxy fighting the biggest villians in the Star Wars universe. </p>
+                            <a href="https://github.com/james479/StarWarsDungeon" target="_blank" class="project-link text-uppercase text-center d-block text-decoration-none">Go to project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase text-center">Front-end studio</h2>
+                            <img class="img-fluid d-block mx-auto my-2" src="~/Content/assets/img/logos/storefront.jpg" alt="store front" />
+                            <p class="text-justify">Coming soon</p>
+                            <!--<a href="#" target="_blank" class="project-link text-uppercase text-center d-block text-decoration-none">Go to project</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 4-->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase text-center">Front-end studio</h2>
+                            <img class="img-fluid d-block mx-auto my-2" src="~/Content/assets/img/logos/admin-tool.jpg" alt="admin" />
+                            <p class="text-justify">Coming soon</p>
+                            <a href="#" target="_blank" class="project-link text-uppercase text-center d-block text-decoration-none">Go to project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 5-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase text-center">Front-end studio</h2>
+                            <img class="img-fluid d-block mx-auto my-2" src="/assets/img/logos/fed1-logo.jpg" alt="" />
+                            <p class="text-justify">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <a href="#" target="_blank" class="project-link text-uppercase text-center d-block text-decoration-none">Go to project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 6-->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="~/Content/assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase text-center">Front-end studio</h2>
+                            <img class="img-fluid d-block mx-auto my-2" src="/assets/img/logos/fed1-logo.jpg" alt="" />
+                            <p class="text-justify">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <a href="#" target="_blank" class="project-link text-uppercase text-center d-block text-decoration-none">Go to project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $("header").addClass('header-other-pages');
+        $("header").addClass('header-projects');
+    </script>
+}

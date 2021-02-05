@@ -1,31 +1,72 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "James Glover | Home";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+@section Masthead {
+    <section class="masthead masthead-main text-center d-flex justify-content-center">
+        <div>
+            <h1 class="mb-5">James Glover</h1>
+            <h2>Web Developer</h2>
+        </div>
+    </section>
+}
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
+<section class="row">
+    <article class="col-md-8 col-sm-12">
+        <h1 class="section-headline text-center">About Me</h1>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            I'm James Glover and I'm a Web Developer based out of the Kansas City metropolitan area. I have always had a passion for technology and programming. I love the problem solving aspect and fulfillment of creating something with just lines of code. My time in the Army has taught me the values of teamwork, leadership, self-discipline, attention to detail, problem solving and critical thinking. These values have carried over into my new career as a developer.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>
+            If you are interested in someone who has a passion for technology and development please contact me by email or Linked In. I look forward to hearing from you.
+        </p>
+    </article>
+    <aside class="col-md-4 col-sm-12 about-me-aside m-auto">
+        <img src="~/Content/assets/img/JamesGlover2-crop.jpg" class="profile-image m-auto img-fluid rounded-circle" alt="James Glover" />
+    </aside>
+</section>
+<section class="skills">
+    <h2 class="section-headline text-center mb-5">Skills</h2>
+    <div class="row mb-5">
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>HTML</h3>
+            <img src="~/Content/assets/img/logos/html.png" alt="HTML" />
+        </div>
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>CSS</h3>
+            <img src="~/Content/assets/img/logos/css3.svg" alt="CSS" />
+        </div>
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>JAVASCRIPT</h3>
+            <img src="~/Content/assets/img/logos/javascript.svg" alt="Javascript" />
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+
+    <div class="row mb-5">
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>C#</h3>
+            <img src="~/Content/assets/img/logos/c-sharp-logo.svg" alt="c#" />
+        </div>
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>JAVA</h3>
+            <img src="~/Content/assets/img/logos/java.svg" alt="Java" />
+        </div>
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>BOOTSTRAP</h3>
+            <img src="~/Content/assets/img/logos/bootstrap.svg" alt="Bootstrap" />
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+    <div class="row mb-5">
+        <div class="col-md-4 col-sm-1 text-center">
+            <h3>SQL SERVER</h3>
+            <img src="~/Content/assets/img/logos/sql.svg" alt="SQL server" />
+        </div>
     </div>
-</div>
+</section>
+
+@section Scripts {
+    <script>
+        $("header").addClass('header-main-page');
+    </script>
+}

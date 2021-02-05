@@ -1,0 +1,252 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/*
+    Google Fonts
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+*/
+
+:root {
+    --color-turquoise: rgb(100, 176, 158);
+    --color-dark-blue: rgb(10,25,47);
+    --color-light-blue: rgb(80, 84, 96);
+    --color-grey: rgb(168, 178, 209);
+    --color-linked-in: rgb(40,103,178);
+    --color-github: rgb(33, 31, 31);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.section-headline {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+}
+
+
+/*header*/
+
+.header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.header-main-page {
+    background-image: linear-gradient(rgba(10, 25, 47, .8), rgba(10, 25, 47, .8)), url(/assets/img/computer-image.jpg);
+    height: 80vh;
+}
+
+.header-other-pages {
+    height: 40vh;
+}
+
+.header-resume {
+    background-image: linear-gradient(rgba(10, 25, 47, .8), rgba(10, 25, 47, .8)), url(/assets/img/resume.jpg);
+}
+
+.header-projects {
+    background-image: linear-gradient(rgba(10, 25, 47, .8), rgba(10, 25, 47, .8)), url(/assets/img/projects.jpg);
+
+}.header-links {
+    background-image: linear-gradient(rgba(10, 25, 47, .8), rgba(10, 25, 47, .8)), url(/assets/img/links.jpg);
+}
+
+.header-contact {
+    background-image: linear-gradient(rgba(10, 25, 47, .8), rgba(10, 25, 47, .8)), url(/assets/img/email.jpg);
+}
+
+.masthead-other-pages h1 {
+    margin-top: 3.8em;
+}
+
+.masthead-main {
+    margin-top: 8em;
+}
+
+
+    .masthead h1 {
+        font-size: 4rem;
+        color: var(--color-grey);
+    }
+
+.masthead h2 {
+    font-size: 3rem;
+    color: var(--color-light-blue);
+}
+
+/*self image*/
+.profile-image {
+    box-shadow: 1px 1px 11px -1px rgba(0,0,0,0.93);
+}
+
+
+/*navbar*/
+@media only screen and (max-width: 992px) {
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+.nav-link {
+    font-size: 1.7rem;
+}
+
+
+/*about me section*/
+.about-me-aside {
+    text-align: center;
+}
+
+.about-me-aside img {
+    display: block;
+}
+
+.fa-linkedin-in {
+    color: var(--color-linked-in);
+}
+
+.fa-github {
+    color: var(--color-github);
+}
+
+.skills {
+    margin-top: 8em;
+}
+
+/*projects page*/
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-logo {
+    object-fit: cover;
+}
+
+    .project-logo:hover, .project-logo:focus {
+        opacity: 0.6;
+        background: linear-gradient(rgba(10, 25, 47, .8));
+    }
+
+footer {
+    background-color: var(--color-light-blue);
+    color: var(--color-grey);
+}
+
+/*links page*/
+
+.class-mate {
+    margin-bottom: 1.8rem;
+}
+
+.class-mate img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.3rem solid rgba(0, 0, 0, 0.1);
+}
+
+.class-mate-photo:focus, .class-mate-photo:hover {
+    opacity: 0.6;
+}
+
+
+
+
+/*modal*/
+.modal-content {
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.project-link {
+    font-size: 1.4rem;
+    color: var(--color-dark-blue);
+}
+
+.project-link:focus, .project-link:hover {
+    color: var(--color-light-blue);
+}
+
+.btn {
+    background-color: var(--color-grey);
+}
+
+.btn:hover, .btn:focus {
+    background-color: var(--color-light-blue);
+}
+
+
+
+
+/*RESUME*/
+
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
+
+    .resume .resume-item h4 {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        color: #0563bb;
+        margin-bottom: 10px;
+    }
+
+    .resume .resume-item h5 {
+        font-size: 16px;
+        background: #f7f8f9;
+        padding: 5px 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .resume .resume-item ul {
+        padding-left: 20px;
+    }
+
+        .resume .resume-item ul li {
+            padding-bottom: 10px;
+        }
+
+    .resume .resume-item:last-child {
+        padding-bottom: 0;
+    }
+
+    .resume .resume-item::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #0563bb;
