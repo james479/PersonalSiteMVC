@@ -27,40 +27,81 @@
 </section>
 <section class="skills">
     <h2 class="section-headline text-center mb-5">Skills</h2>
-    <div class="row mb-5">
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>HTML</h3>
-            <img src="~/Content/assets/img/logos/html.png" alt="HTML" />
-        </div>
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>CSS</h3>
-            <img src="~/Content/assets/img/logos/css3.svg" alt="CSS" />
-        </div>
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>JAVASCRIPT</h3>
-            <img src="~/Content/assets/img/logos/javascript.svg" alt="Javascript" />
-        </div>
-    </div>
-
-    <div class="row mb-5">
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>C#</h3>
-            <img src="~/Content/assets/img/logos/c-sharp-logo.svg" alt="c#" />
-        </div>
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>JAVA</h3>
-            <img src="~/Content/assets/img/logos/java.svg" alt="Java" />
-        </div>
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>BOOTSTRAP</h3>
-            <img src="~/Content/assets/img/logos/bootstrap.svg" alt="Bootstrap" />
-        </div>
-    </div>
-
-    <div class="row mb-5">
-        <div class="col-md-4 col-sm-1 text-center">
-            <h3>SQL SERVER</h3>
-            <img src="~/Content/assets/img/logos/sql.svg" alt="SQL server" />
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/html-5.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/css3.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/javascript.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/c-sharp-logo.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/java.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/jquery.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/bootstrap.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/sql.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="~/Content/assets/img/logos/react.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </section>
@@ -68,5 +109,27 @@
 @section Scripts {
     <script>
         $("header").addClass('header-main-page');
+
+        $('#recipeCarousel').carousel({
+            interval: 5000
+        })
+
+        $('.carousel .carousel-item').each(function () {
+            var minPerSlide = 3;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
     </script>
 }

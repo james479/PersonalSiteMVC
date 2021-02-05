@@ -155,6 +155,8 @@
     <Content Include="Content\assets\img\logos\html.png" />
     <Content Include="Content\assets\img\logos\java.svg" />
     <Content Include="Content\assets\img\logos\javascript.svg" />
+    <Content Include="Content\assets\img\logos\jquery.svg" />
+    <Content Include="Content\assets\img\logos\react.svg" />
     <Content Include="Content\assets\img\logos\sql.svg" />
     <Content Include="Content\assets\img\logos\starwars.jpg" />
     <Content Include="Content\assets\img\logos\storefront.jpg" />
