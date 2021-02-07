@@ -14,6 +14,7 @@
     --color-grey: rgb(168, 178, 209);
     --color-linked-in: rgb(40,103,178);
     --color-github: rgb(33, 31, 31);
+    --color-hackerrank: rgb(35,175,85);
 }
 
 body {
@@ -83,6 +84,7 @@ body {
 /*self image*/
 .profile-image {
     box-shadow: 1px 1px 11px -1px rgba(0,0,0,0.93);
+
 }
 
 
@@ -113,6 +115,10 @@ body {
 
 .fa-github {
     color: var(--color-github);
+}
+
+.fa-hackerrank {
+    color: var(--color-hackerrank);
 }
 
 .skills {
