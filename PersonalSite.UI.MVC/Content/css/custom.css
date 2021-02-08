@@ -27,6 +27,10 @@ body {
     font-size: 4rem;
 }
 
+.section-part {
+    padding: 2em;
+}
+
 
 /*header*/
 
@@ -95,9 +99,25 @@ body {
     }
 }
 
-.nav-link {
-    font-size: 1.7rem;
+#navbarSupportedContent {
+    transition: all .7s;
 }
+
+.nav-link {
+    font-size: 1.5em;
+    transition: all .5s;
+}
+
+.navbar-shrink {
+    background-color: var(--color-light-blue);
+    opacity: .9;
+}
+
+    .navbar-shrink ul li a {
+        font-size: 1.2em;
+    }
+
+
 
 
 /*about me section*/
