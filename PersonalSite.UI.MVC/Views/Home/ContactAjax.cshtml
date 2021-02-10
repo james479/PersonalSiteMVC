@@ -1,0 +1,52 @@
+﻿@model PersonalSite.UI.MVC.Models.ContactViewModel
+
+
+
+
+<section class="page-section section-part bg-light" id="contact">
+    <h1 class="section-headline text-center mb-5">Contact</h1>
+    @using (Html.BeginForm("", "", FormMethod.Post, new { id = "ContactCreateForm" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="text-center">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control mb-4", placeholder = Html.DisplayNameFor(x => x.Name) } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control mb-4", placeholder = Html.DisplayNameFor(x => x.Email) } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control mb-4", placeholder = Html.DisplayNameFor(x => x.Subject) } })
+                        @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", placeholder = Html.DisplayNameFor(x => x.Message) } })
+                        @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <input type="submit" value="Send Message" class="btn btn-xl text-uppercase p-3 mt-4" />
+    }
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+
+}
